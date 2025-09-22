@@ -63,7 +63,7 @@ export default function Base64EncoderDecoderPage() {
     };
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold gradient-text">Base64 Encoder/Decoder</h1>
             <Card>
                 <CardHeader>

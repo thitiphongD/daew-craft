@@ -129,7 +129,7 @@ export default function StrongRandomPasswordGeneratorPage() {
     const strength = getPasswordStrength(password);
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold gradient-text">Strong Random Password Generator</h1>
 
             <Card>

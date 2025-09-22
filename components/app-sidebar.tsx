@@ -9,7 +9,8 @@ import {
   Key,
   LockIcon,
   QrCodeIcon,
-  BarcodeIcon
+  BarcodeIcon,
+  UserIcon
 } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
@@ -70,6 +71,11 @@ const items = [
     title: "Barcode Generator",
     url: "/barcode-generator",
     icon: BarcodeIcon,
+  },
+  {
+    title: "ID Generator",
+    url: "/id-generator",
+    icon: UserIcon,
   },
 ]
 

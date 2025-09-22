@@ -61,7 +61,7 @@ export default function UrlEncoderDecoderPage() {
     };
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold gradient-text">Url Encoder/Decoder</h1>
             <Card>
                 <CardHeader>

@@ -106,7 +106,7 @@ export default function JwtEncoderDecoderPage() {
     };
 
     return (
-        <div className="space-y-4 max-w-6xl mx-auto">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold gradient-text">JWT Encoder/Decoder</h1>
 
             <Tabs defaultValue="decode" className="w-full">

@@ -10,7 +10,7 @@ export default function SnippetsPage() {
     const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <div className="flex items-center justify-between">
                 <h1 className="text-3xl font-bold gradient-text">Code Snippets</h1>
                 <div className="flex items-center gap-2">

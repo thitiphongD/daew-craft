@@ -4,7 +4,6 @@ import { useState, useRef } from "react";
 import { toast } from "sonner";
 import QRCode from "qrcode";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
@@ -85,7 +84,7 @@ export default function QrCodeGeneratorPage() {
     };
 
     return (
-        <div className="space-y-4 max-w-4xl mx-auto">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold gradient-text">QR Code Generator</h1>
 
             <Card>

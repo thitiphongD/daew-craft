@@ -64,7 +64,7 @@ export default function JsonFormatterPage() {
     };
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold gradient-text">Json Formatter</h1>
             <Card>
                 <CardHeader>
