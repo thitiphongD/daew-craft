@@ -5,7 +5,11 @@ import {
   Type,
   Braces,
   Link as LinkIcon,
-  FileText
+  FileText,
+  Key,
+  LockIcon,
+  QrCodeIcon,
+  BarcodeIcon
 } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
@@ -46,6 +50,26 @@ const items = [
     title: "Base64 Encoder/Decoder",
     url: "/base64-encoder-decoder",
     icon: FileText,
+  },
+  {
+    title: "JWT Encoder/Decoder",
+    url: "/jwt-encoder-decoder",
+    icon: Key,
+  },
+  {
+    title: "Strong Random Password Generator",
+    url: "/strong-random-password-generator",
+    icon: LockIcon,
+  },
+  {
+    title: "QR Code Generator",
+    url: "/qr-code-generator",
+    icon: QrCodeIcon,
+  },
+  {
+    title: "Barcode Generator",
+    url: "/barcode-generator",
+    icon: BarcodeIcon,
   },
 ]
 
