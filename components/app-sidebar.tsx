@@ -10,7 +10,8 @@ import {
   LockIcon,
   QrCodeIcon,
   BarcodeIcon,
-  UserIcon
+  UserIcon,
+  GlobeIcon
 } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
@@ -76,6 +77,11 @@ const items = [
     title: "ID Generator",
     url: "/id-generator",
     icon: UserIcon,
+  },
+  {
+    title: "IP Address Checker",
+    url: "/ip-address-checker",
+    icon: GlobeIcon,
   },
 ]
 
