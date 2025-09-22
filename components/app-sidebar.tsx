@@ -1,18 +1,6 @@
 "use client"
 
-import {
-  Code2,
-  Type,
-  Braces,
-  Link as LinkIcon,
-  FileText,
-  Key,
-  LockIcon,
-  QrCodeIcon,
-  BarcodeIcon,
-  UserIcon,
-  GlobeIcon
-} from "lucide-react"
+import { Code2 } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 
@@ -26,64 +14,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-
-const items = [
-  {
-    title: "Snippet",
-    url: "/snippets",
-    icon: Code2,
-  },
-  {
-    title: "Text Transform",
-    url: "/text",
-    icon: Type,
-  },
-  {
-    title: "JSON Formatter",
-    url: "/json-formatter",
-    icon: Braces,
-  },
-  {
-    title: "URL Encoder/Decoder",
-    url: "/url-encoder-decoder",
-    icon: LinkIcon,
-  },
-  {
-    title: "Base64 Encoder/Decoder",
-    url: "/base64-encoder-decoder",
-    icon: FileText,
-  },
-  {
-    title: "JWT Encoder/Decoder",
-    url: "/jwt-encoder-decoder",
-    icon: Key,
-  },
-  {
-    title: "Strong Random Password Generator",
-    url: "/strong-random-password-generator",
-    icon: LockIcon,
-  },
-  {
-    title: "QR Code Generator",
-    url: "/qr-code-generator",
-    icon: QrCodeIcon,
-  },
-  {
-    title: "Barcode Generator",
-    url: "/barcode-generator",
-    icon: BarcodeIcon,
-  },
-  {
-    title: "ID Generator",
-    url: "/id-generator",
-    icon: UserIcon,
-  },
-  {
-    title: "IP Address Checker",
-    url: "/ip-address-checker",
-    icon: GlobeIcon,
-  },
-]
+import { SIDEBAR_ITEMS } from "@/lib/navigation-data"
 
 export function AppSidebar() {
   const pathname = usePathname()
@@ -101,7 +32,7 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {SIDEBAR_ITEMS.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild isActive={pathname === item.url}>
                     <Link href={item.url}>
